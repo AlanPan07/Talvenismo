@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../Imagens/LogoT.webp" type="image/x-icon">
+    <title>Maybenism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Luckiest+Guy&family=PT+Sans:ital,wght@0,700;1,700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/formClaro.css" id="link">
+</head>
+
+<body>
+    <div onclick='menua()' class='menufundo1' id='MenuFundo'></div>
+    <div id='menu' class='menu1'>
+        <div>
+            <input type='button' value='X' onclick='menua()'>
+        </div>
+        <div onclick='cadastro()' id='foto'>
+            <img src='../../Imagens/Cadastro.webp' alt='Image of register'>
+            <div>
+                <input type='button' value='Sign in or'>
+                <input type='button' value='register'>
+            </div>
+        </div>
+        <div>
+            <input type='button' value='Languages' onclick='traducao()'>
+        </div>
+        <div>
+            <input type='button' value='Appearance' onclick='modoaparencia()'>
+        </div>
+        <div>
+            <input type='button' value='Portal' onclick='portal()'>
+        </div>
+    </div>
+
+    <section id='configuracoes' class='invisivel'>
+        <div id='cabecalho_login'>
+            <img src='../../Imagens/Login/Login1.webp' alt='Foto da sua conta' onclick='cadastro2(3)'>
+            <input id='nome_usuario' type='text' class='status_login_input'>
+        </div>
+        <div id='status_login'>
+            <h2>Data sheet:</h2>
+            <label>
+                <span>Status:</span>
+                <input id='status' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Name:</span>
+                <input id='nome_completo' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Phone number:</span>
+                <input id='telefone' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Email:</span>
+                <input id='email' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Gender:</span>
+                <input id='genero' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Date of birth:</span>
+                <input id='data_nascimento' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Password:</span>
+                <input id='senha' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Position:</span>
+                <input id='posicao' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Country:</span>
+                <input id='pais' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>State:</span>
+                <input id='estado' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>City:</span>
+                <input id='cidade' type='text' class='status_login_input'>
+            </label>
+            <label>
+                <span>Address:</span>
+                <input id='endereco' type='text' class='status_login_input'>
+            </label>
+        </div>
+        <div id='logout' onclick='logout()' class='final'><p>Log out of account</p></div>
+        <div id='login' onclick='cadastro2(1)' class='final'><p>Change account - Sign in</p></div>
+        <div id='cadastro' onclick='cadastro2(2)' class='final'><p>Register new account</p></div>
+    </section>
+
+    <section id='aparencia' class='invisivel'>
+        <form name='aparen' id='aparen'>
+            <h2>Select the theme you want:</h2>
+            <p>
+                <input type='radio' name='modo'>Light theme<br>
+                <input type='radio' name='modo'>Dark theme<br>
+            </p>
+            <p>
+                <input type='button' value='Change theme' onclick='modoA()'>
+            </p>
+        </form>
+    </section>
+
+    <section id='idiomas' class='invisivel'>
+        <form name='idioms' id='idioms'>
+            <h2>Select the language you want:</h2>
+            <p>
+                <input type='radio' name='linguas'>English<br>
+                <input type='radio' name='linguas'>Portuguese<br>
+            </p>
+            <p>
+                <input type='button' value='Change language' onclick='idiomas()'>
+            </p>
+        </form>
+    </section>
+    <header>
+        <div>
+            <div id='nemus0'>
+                <input type='button' value='Menu' onclick='menua()' id='menumenu'>
+            </div>
+            <div id='a'>
+                <a href='index.html'>
+                    <img src='../../Imagens/SimboloClaro.webp' alt="Symbol of Maybenism">
+                    <h1>The Sacred<BR> Maybenism</h1>
+                    </a>
+            </div>
+            <div id='div0' onclick='cadastro()'>
+                <img src='../../Imagens/Cadastro.webp' alt='cadastro'>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <div>
+                <a href="Introducao.html">Introduction</a>
+            </div>
+            <div>
+                <a href="Historia.html">History</a>
+            </div>
+            <div>
+                <a href="LivroDigital.html">Digital Book</a>
+            </div>
+            <div>
+                <a href="Membros.html">Members</a>
+            </div>
+            <div>
+                <a href="Criador.html">Creator</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <a href="Introducao.html" class="IndexMainA">What is it?</a>
+            <a href="Historia.html"  class="IndexMainA">Your story</a>
+            <a href="LivroDigital.html"  class="IndexMainA">Digital Book</a>
+            <a href="Membros.html"  class="IndexMainA">Members</a>
+            <a href="Criador.html"  class="IndexMainA">Creator</a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Copyright &copy; Alan Ono Osanai Pan
+            </p>
+        </div>
+        <div>
+            <img src="../../Imagens/Gmail.webp" alt="gmail">
+            <p> Gmail: Talvenismo@gmail.com</p>
+        </div>
+    </footer>
+    <script src="../../Java/script.js">
+    </script>
+</body>
+
+</html>

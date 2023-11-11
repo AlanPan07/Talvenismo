@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../Imagens/LogoT.webp" type="image/x-icon">
+        <title>Login-Maybenism</title>
+
+        <link rel="stylesheet" href="../../CSS/loginClaro.css" id="link">
+    </head>
+    <body>
+        <main>
+            <form class="login" action="../../BD/login.php" method="POST">
+                <img src="../../Imagens/SimboloClaro.webp" alt="Simbolo do talvenismo" class="login_logo">
+                <h1 class="login_titulo">Sign in</h1>
+                <label class="login_label">
+                    <span>Username</span>
+                    <input type="text" name="nomedousuario" class="input" required maxlength="100">
+                </label>
+
+                <label class="login_label">
+                    <span>Password</span>
+                    <input type="password" name="senha" class="input" required maxlength="255">
+                </label>
+
+                <div class="icone_login">
+                    <button type="button" class="icone_butao">
+                        <img src="../../Imagens/Facebook.webp" alt="facebook">
+                    </button>
+                    <button type="button" class="icone_butao">
+                        <img src="../../Imagens/Google.webp" alt="google">
+                    </button>
+                    <button type="button" class="icone_butao">
+                        <img src="../../Imagens/Apple.webp" alt="apple">
+                    </button>
+                </div>
+
+                <label class="login_caixachecada">
+                    <input type="checkbox" class="label_caixachecada">
+                    Keep logged in
+                </label>
+
+                <button type="button" class="login_button" disabled>
+                    <img src="../../Imagens/Seta.webp" alt="An arrow pointing to the right indicating the end of sign in">
+                </button>
+
+                <a href="cadastro.html" class="login_link">Can't log in?</a>
+                <a href="cadastro.html" class="login_link">Don't have an account? Create an account.</a>
+                <a href="#" class="antesLoginLink login_link">&lt; To go back</a>
+            </form>
+        </main>
+
+        <script src="../../Java/script.js"></script>
+        <script src="../../Java/login.js"></script>
+    </body>
+</html>

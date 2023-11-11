@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../Imagens/LogoT.webp" type="image/x-icon">
+        <title>Login-Talvenismo</title>
+
+        <link rel="stylesheet" href="../../CSS/loginClaro.css" id="link">
+    </head>
+    <body>
+        <main>
+            <form class="login" action="../../BD/login.php" method="POST">
+                <img src="../../Imagens/SimboloClaro.webp" alt="Simbolo do talvenismo" class="login_logo">
+                <h1 class="login_titulo">Fazer login</h1>
+                <label class="login_label">
+                    <span>Nome do usuário</span>
+                    <input type="text" name="nomedousuario" class="input" required maxlength="100">
+                </label>
+
+                <label class="login_label">
+                    <span>Senha</span>
+                    <input type="password" name="senha" class="input" required maxlength="255">
+                </label>
+
+                <div class="icone_login">
+                    <button type="button" class="icone_butao">
+                        <img src="../../Imagens/Facebook.webp" alt="facebook">
+                    </button>
+                    <button type="button" class="icone_butao">
+                        <img src="../../Imagens/Google.webp" alt="google">
+                    </button>
+                    <button type="button" class="icone_butao">
+                        <img src="../../Imagens/Apple.webp" alt="apple">
+                    </button>
+                </div>
+
+                <label class="login_caixachecada">
+                    <input type="checkbox" class="label_caixachecada">
+                    Manter login
+                </label>
+
+                <button type="submit" class="login_button" disabled>
+                    <img src="../../Imagens/Seta.webp" alt="Uma seta apontando para direita indicando o termino do login">
+                </button>
+
+                <a href="Cadastro.html" class="login_link">Não consegue iniciar sessão?</a>
+                <a href="Cadastro.html" class="login_link">Não tem conta? Criar conta.</a>
+                <a href="#" class="antesLoginLink login_link">&lt; Voltar</a>
+            </form>
+        </main>
+
+        <script src="../../Java/script.js"></script>
+        <script src="../../Java/login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../Imagens/LogoT.webp" type="image/x-icon">
+        <title>Cadastro-Talvenismo</title>
+        <link rel="stylesheet" href="../../CSS/cadastroClaro.css" id="link">
+    </head>
+    <body>
+
+        <form class="cadastro" id="cad">
+
+            <h1>CONTA</h1>
+            <h2>Crie a sua conta e se torne membro do Talvenismo</h2>
+
+            <label>
+                <span>*Nome de usuário</span>
+                <input type="text" name="nomeUsuario" class="CadastroInput" required maxlength="100">
+                <span class="informar invisibilidade">Você precisa definir um nome de usuário.</span>
+            </label>
+
+            <label>
+                <span>*Nome completo</span>
+                <input type="text" name="nomeCompleto" class="CadastroInput" required maxlength="255">
+                <span class="informar invisibilidade">Você precisa informar o seu nome e sobrenome.</span>
+            </label>
+
+            <label>
+                <span>*Telefone</span>
+                <input type="tel" name="telefone" class="CadastroInput" required maxlength="20">
+                <span class="informar invisibilidade">Você precisa informar um telefone de contato.</span>
+            </label>
+
+            <label>
+                <span>*E-mail</span>
+                <input type="email" name="email" class="CadastroInput" required maxlength="255">
+                <span class="informar invisibilidade">Você precisa informar um e-mail.</span>
+            </label>
+
+            <label>
+                <span>*Senha</span>
+                <input type="password" name="senha" class="CadastroInput" required minlength="8" maxlength="255">
+                <span class="informar invisibilidade">Você precisa definir uma senha.</span>
+            </label>
+
+            <label>
+                <span>*Confirmar senha</span>
+                <input type="password" name="confirmarSenha" class="CadastroInput" required minlength="8" maxlength="255">
+                <span class="informar invisibilidade">Você precisa confirmar a senha.</span>
+            </label>
+
+            <label>
+                <span>*Gênero</span>
+                <select name="genero" class="CadastroInput" id="Genero" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Homem">Masculino</option>
+                    <option value="Mulher">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <span class="informar invisibilidade">Você precisa selecionar uma das opções.</span>
+            </label>
+
+            <label>
+                <span>*Data de nascimento</span>
+                <input type="date" name="dataNasc" class="CadastroInput" required>
+                <span class="informar invisibilidade">A data de nascimento deve ser informada.</span>
+            </label>
+
+            <h3>Localização</h3>
+
+            <label>
+                <span>País</span>
+                <input type="text" name="pais" maxlength="100">
+            </label>
+
+            <button type="submit" id="submit">Cadastrar</button>
+
+            <a href="Login.html" class="login_link">Já tem uma conta? Entre.</a>
+            <a href="#" class="antesLoginLink login_link">&lt; Voltar</a>
+        </form>
+
+        <script src="../../Java/script.js"></script>
+        <script src="../../Java/cadastro.js"></script>
+    </body>
+</html>

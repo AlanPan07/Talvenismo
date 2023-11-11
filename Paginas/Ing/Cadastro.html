@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../Imagens/LogoT.webp" type="image/x-icon">
+        <title>Register-Maybenism</title>
+        <link rel="stylesheet" href="../../CSS/cadastroClaro.css" id="link">
+    </head>
+    <body>
+
+        <form class="cadastro" id="cad">
+
+            <h1>ACCOUNT</h1>
+            <h2>Create your account and become member of Maybenism</h2>
+
+            <label>
+                <span>*Username</span>
+                <input type="text" name="nomeUsuario" class="CadastroInput" required maxlength="100">
+                <span class="informar invisibilidade">You need to set a username.</span>
+            </label>
+
+            <label>
+                <span>*Full name</span>
+                <input type="text" name="nomeCompleto" class="CadastroInput" required maxlength="255">
+                <span class="informar invisibilidade">You need to provide your first and last name.</span>
+            </label>
+
+            <label>
+                <span>*Phone number</span>
+                <input type="tel" name="telefone" class="CadastroInput" required maxlength="20">
+                <span class="informar invisibilidade">You need to provide a contact telephone number.</span>
+            </label>
+
+            <label>
+                <span>*E-mail</span>
+                <input type="email" name="email" class="CadastroInput" required maxlength="255">
+                <span class="informar invisibilidade">You need to provide an email.</span>
+            </label>
+
+            <label>
+                <span>*Password</span>
+                <input type="password" name="senha" class="CadastroInput" required minlength="8" maxlength="255">
+                <span class="informar invisibilidade">You need to set a password.</span>
+            </label>
+
+            <label>
+                <span>*Confirm password</span>
+                <input type="password" name="confirmarSenha" class="CadastroInput" required minlength="8" maxlength="255">
+                <span class="informar invisibilidade">You need to confirm the password.</span>
+            </label>
+
+            <label>
+                <span>*Gender</span>
+                <select name="genero" class="CadastroInput" id="Genero" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Homem">Male</option>
+                    <option value="Mulher">Female</option>
+                    <option value="Outro">Other</option>
+                </select>
+                <span class="informar invisibilidade">You need to select one of the options.</span>
+            </label>
+
+            <label>
+                <span>*Date of birth</span>
+                <input type="date" name="dataNasc" class="CadastroInput" required>
+                <span class="informar invisibilidade">The date of birth must be informed.</span>
+            </label>
+
+            <h3>Location</h3>
+
+            <label>
+                <span>Country</span>
+                <input type="text" name="pais" maxlength="100">
+            </label>
+
+            <button type="submit" id="submit">Register</button>
+
+            <a href="Login.html" class="login_link">Already have an account? Come in!</a>
+            <a href="#" class="antesLoginLink login_link">&lt; To go back</a>
+        </form>
+
+        <script src="../../Java/script.js"></script>
+        <script src="../../Java/cadastro.js"></script>
+    </body>
+</html>
