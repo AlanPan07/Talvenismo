@@ -1,0 +1,41 @@
+Windows name: Talvenismo>BD
+
+Senha do BD, MySQL8002SQL!
+
+Usuário: Alan Ono Osanai Pan
+Senha:Sql1118002!Sql
+
+Usuário: Alan2
+senha:Sql1118002!
+
+_______________________________________________________________________________________________
+
+localhost
+
+contas: SupremoLiderDaPossivelIgrejaTalvenista
+
+senha: AlanOnoOsanaiPan
+
+nome do banco de dados: sislogintalv
+
+tabela: usuarios
+_______________________________________________________________________________________________
+
+InfinityFree
+
+Nome do banco de dados MySQL: if0_35353260_sislogintalv
+Nome de usuário MySQL: if0_35353260
+Senha MySQL: (Sua senha do vPanel)
+Nome do host MySQL: sql311.infinityfree.com
+
+________________________________________________________________________________________________
+
+000WebHost
+
+Nome de usuario: SupremoLíder
+Senha: AlanOnoOsanaiPan01?
+
+
+
+
+

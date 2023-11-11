@@ -1,0 +1,122 @@
+﻿/* (Para computador desktop) */
+
+.LivroDigitalMainCx1{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;	
+	align-items: center;
+	aspect-ratio: 3.1/4;
+	width: clamp(0em, 620px, 95%);
+	padding: 0;
+}
+
+.LivroDigitalMainCx1 div{
+	border: solid 1px #414142;
+	box-sizing: border-box;
+	margin-left: 2.5vw;
+	margin-right: 2.5vw;
+	margin-bottom: 2.5vw;
+	height: auto;
+	padding: clamp(0em, 4vw, 30px);
+	min-width: 85%;
+}
+
+.LivroDigitalMainCx1 h1{
+	margin-top: clamp(0em, 20vw, 3em);
+	font-size: clamp(0em, 9vw, 4em);
+	text-transform: uppercase;
+}
+
+.LivroDigitalMainCx1 h2{
+	font-size: clamp(0em, 3.5vw, 1.4em);
+	text-transform: uppercase;
+	margin-left: 0;
+	font-weight:unset;
+}
+
+.LivroDigitalMainCx1 h4{
+	font-size: clamp(0em, 35vw, 30em);
+	font-family:Calibri;
+	font-weight: unset;
+	margin-bottom: -9.5vw;
+	margin-top: -5vw;
+}
+
+
+.LivroDigitalMainCx1 h3{
+	font-size: clamp(0em, 5vw, 1.6em);
+	font-weight: 200;
+}
+
+.LivroDigitalMainCx1 h3.RPE{
+	font-size: clamp(0em, 6vw, 3.2em);
+	font-weight: 200;
+}
+
+.LivroDigitalMainCx1 p{
+	margin-top: 0.8vh;
+	margin-bottom: 0.8vh;
+	text-indent: 40px;
+	font-size: clamp(0em, 3.5vw, 1.7em);
+	text-align: justify;
+}
+
+.LivroDigitalMainCx1 li{
+	margin-top: 0.8vh;
+	margin-bottom: 0.8vh;
+	font-size: clamp(0em, 3.5vw, 1.7em);
+	text-align: justify;
+	margin-left: -20px;
+}
+
+.LivroDigitalMainCx1 u li{
+	font-size: clamp(0em, 2.1vw, 0.95em);
+}
+
+.LivroDigitalMainCx1 div p u{
+	font-size: clamp(0em, 2.9vw, 0.9em);
+}
+
+.LivroDigitalMainCx1 div li u{
+	font-size: clamp(0em, 2.9vw, 1.2em);
+}
+
+.LivroDigitalMainCx1 ol#membros li{
+	margin-top: 8vh;
+}
+
+.LivroDigitalMainPaginas {
+	margin-top: 3vw;
+	display: flex;
+	flex-direction: row;
+	border: solid 2px #414142;
+	border-radius: clamp(0px, 5vw, 10px);
+	background-color: #aaa;
+}
+
+.LivroDigitalMainPaginas a:hover{
+    color: blue;
+}
+
+.LivroDigitalMainPaginas a{
+	padding: clamp(0px, 0.6vw, 10px);
+}
+
+.LivroDigitalMainPaginas p{
+	margin-inline: clamp(0.3em, 5vw, 20px);
+	padding: clamp(0px, 0.7vw, 5px);
+	font-size: clamp(0em, 3.5vw, 1.7em);
+	text-indent: 0px;
+}
+
+.LivroDigitalMainPaginas a#esquerda{
+	border-right: 2px solid #414142;
+}
+
+.LivroDigitalMainPaginas a#direita{
+	border-left: 2px solid #414142;
+}
+
+.LivroDigitalMainPaginas a img{
+	width: clamp(0em, 2.5vw, 1em);
+}

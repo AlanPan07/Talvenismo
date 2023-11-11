@@ -1,0 +1,197 @@
+/* (Para qualquer aparelho) */
+
+/*Tudo o que é para afetar todos o itens*/
+* {
+    margin: 0 auto;
+    padding: 0;
+    color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #444;
+}
+
+:root {
+    --dp: #343434;
+}
+
+main {
+    display: flex;
+    width: clamp(25vw, 100vw, 450px);
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: clamp(1vw, 6vw, 50px);
+}
+
+.login_logo {
+    height: clamp(7vw, 40vw, 100px);
+    margin-bottom: clamp(0.2vw, 9vw, 5vh);
+}
+
+.login_titulo {
+    margin-top: clamp(0.4vw, 1.5vw, 20px);
+
+    font-size: clamp(1.7vw, 13vw, 1.7em);
+    margin-bottom: clamp(0.6vw, 1.8vw, 30px);
+}
+
+.login_label {
+    display: block;
+    margin-bottom: clamp(0.6vw, 2.5vw, 3vh);
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    background-color: #414142;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: clamp(0.3vw, 1vw, 5px);
+    outline: none;
+    font-size: clamp(1vw, 9vw, 0.9em);
+    padding-left: clamp(1vw, 4vw, 10px);
+    padding-right: clamp(1vw, 4vw, 10px);
+    padding-top: clamp(1.4vw, 8vw, 25px);
+    padding-bottom: clamp(1vw, 4vw, 10px);
+    font-weight: 600;
+    color: var(--dp);
+}
+
+.login_label span {
+    position: absolute;
+    font-size: clamp(1vw, 7vw, 0.8em);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin: clamp(1.2vw, 4vw, 20px);
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.input:focus {
+    background-color: #666;
+    border: 2px solid var(--dp);
+}
+
+.login_label .p_ativo {
+    font-size: clamp(0.5vw, 6vw, 0.7em);
+    margin-top: clamp(0.1vw, 3vw, 8px);
+    margin-left: clamp(0.1vw, 3vw, 10px);
+}
+
+.icone_login {
+    display: flex;
+    gap: clamp(0.7vw, 3vw, 10px);
+    width: 100%;
+    margin-top: clamp(0.4vw, 1.5vw, 1vh);
+}
+
+.icone_login img {
+    height: 80%;
+}
+
+.icone_butao {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: clamp(2vw, 10vw, 30px);
+    border-radius: clamp(0.3vw, 4vw, 5px);
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.icone_login .icone_butao:nth-child(1) {
+    background-color: #6666ff;
+}
+
+.icone_login .icone_butao:nth-child(2) {
+    background-color: #f0f0f0;
+}
+
+.icone_login .icone_butao:nth-child(3) {
+    background-color: black;
+}
+
+.login_caixachecada {
+    width: 100%;
+    margin: clamp(1vw, 7vw, 20px) 0 clamp(1vw, 7vw, 70px);
+    font-size: clamp(1vw, 7vw, 0.9em);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.label_caixachecada {
+    appearance: none;
+    width: clamp(1.5vw, 8vw, 20px);
+    height: clamp(1.5vw, 8vw, 20px);
+    background-color: lightgray;
+    margin-right: 5px;
+    border-radius: clamp(0.3vw, 4vw, 3px);
+}
+
+.label_caixachecada:checked {
+    background-color: #777;
+}
+
+.label_caixachecada:checked::after {
+    content: "";
+    display: block;
+    width: clamp(0.4vw, 4vw, 5px);
+    height: clamp(0.7vw, 3vw, 10px);
+    border: clamp(0.4vw, 4vw, 3px) solid white;
+    border-width: 0 clamp(0.2vw, 4vw, 3px) clamp(0.2vw, 4vw, 3px) 0;
+    transform: rotate(45deg);
+    margin-left: clamp(0.4vw, 4vw, 6px);
+    margin-top: clamp(0.2vw, 4vw, 3px);
+}
+
+.login_button {
+    width: clamp(4vw, 15vw, 60px);
+    height: clamp(4vw, 15vw, 60px);
+    padding: clamp(1.4vw, 6vw, 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    border-radius: clamp(1.4vw, 6vw, 20px);
+    border: none;
+    cursor: pointer;
+    margin-bottom: clamp(0.2vw, 9vw, 40px)
+}
+
+.login_button img {
+    width: clamp(1.4vw, 6vw, 20px);
+    height: clamp(1.4vw, 6vw, 20px);
+}
+
+.login_button:disabled {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid grey;
+}
+
+.login_link {
+    font-size: clamp(0.8vw, 5.5vw, 0.8em);
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.login_link:hover {
+    color: #c8c8c8;
+}

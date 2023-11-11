@@ -1,0 +1,128 @@
+/* (Para qualquer aparelho) */
+
+/*Tudo o que é para afetar todos o itens*/
+* {
+    margin: 0 auto;
+    color: #F0f0f0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #444;
+}
+
+form.cadastro {
+    display: flex;
+    width: clamp(25vw, 100vw, 450px);
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(1vw, 6vw, 50px);
+}
+
+form#cad h1 {
+    font-size: clamp(1.7vw, 15vw, 1.7em);
+    margin-top: clamp(1vw, 8vw, 4vh);
+    margin-bottom: clamp(1vw, 9vw, 5vh);
+    text-transform: uppercase;
+}
+
+form#cad h2 {
+    text-align: center;
+    font-size: clamp(1.4vw, 10vw, 1.5em);
+}
+
+form#cad h3 {
+    text-align: center;
+    font-size: clamp(1.4vw, 13vw, 1.3em);
+}
+
+form#cad label {
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(0.2vw, 9vw, 5vh);
+    font-size: clamp(1.4vw, 9vw, 0.9em);
+}
+
+form#cad input,
+form#cad select {
+    width: clamp(20vw, 90vw, 350px);
+    background-color: #414142;
+    border: 2px solid rgb(255, 0, 0, 0);
+    border-radius: clamp(0.3vw, 1vw, 5px);
+    outline: none;
+    font-size: clamp(1.3vw, 9vw, 0.9em);
+    padding: clamp(0.3vw, 2vw, 10px);
+    font-weight: 600;
+    margin-top: clamp(.1vw, 0.3vw, .5vh);
+    margin-bottom: clamp(.1vw, 0.3vw, .5vh);
+}
+
+form#cad span {
+    font-size: clamp(1vw, 9vw, 0.9em);
+    font-weight: 700;
+    color: #ddd;
+    cursor: text;
+    transition: all 200ms ease;
+    width: 100%;
+}
+
+form#cad button {
+    margin-top: clamp(0.2vw, 9vw, 5vh);
+    width: clamp(20vw, 90vw, 350px);
+    background: linear-gradient(to right, #0000ff, #7777ff);
+    border-radius: clamp(3vw, 5vw, 30px);
+    color: #414142;
+    border: transparent;
+    margin-bottom: clamp(1vw, 3vw, 6vh);
+    font-size: clamp(1.1vw, 9vw, 0.9em);
+    padding: clamp(0.7vw, 4vw, 15px);
+
+}
+
+form#cad span.informar {
+    font-size: clamp(0.3vw, 6vw, 0.7em);
+    font-weight: 400;
+    color: red;
+}
+
+form#cad h3 {
+    margin-top: clamp(0.2vw, 0.7vw, 1vh);
+}
+
+.invisibilidade {
+    opacity: 0;
+}
+
+.loading {
+    width: 10%;
+    animation: girar linear infinite 0.4s;
+}
+
+.login_link {
+    font-size: clamp(0px, 9vw, 0.8em);
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.login_link:hover {
+    color: #c0c0c0;
+}
+
+.antesLoginLink {
+    margin-bottom: clamp(0.4vw, 1.5vw, 2vh);
+}
+
+/*Animação para girar alguma coisa em 360 graus*/
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
